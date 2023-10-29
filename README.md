@@ -2,10 +2,10 @@
 # Treatment Prioritization Model
 
 ## Overview
-This repository contains code for a Treatment Prioritization model using a machine learning approach. The goal of the model is to prioritize treatments based on the severity of illness using the APR (All Patient Refined) Severity of Illness Description as the target variable.
+This repository contains code for a Treatment Prioritization model using a machine learning approach. The goal of the model is to prioritize treatments based on the severity of illness using the APR (All Patient Refined) Severity of Illness Code as the target variable.
 
 ## Dataset
-The model is trained on a dataset containing various features related to patient information, diagnoses, procedures, and other relevant information. The target variable is the APR Severity of Illness Description.
+The model is trained on a dataset containing various features related to patient information, diagnoses, procedures, and other relevant information. The target variable is the APR Severity of Illness Code.
 
 ## Preprocessing
 1. **Data Cleaning**: Handle missing values, outliers, and any data quality issues.
