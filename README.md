@@ -1,10 +1,10 @@
 # Treatment Prioritization Model
 
 ## Overview
-This repository contains code for a Treatment Prioritization model using a machine learning approach. The goal of the model is to prioritize treatments based on the severity of illness using the APR (All Patient Refined) Severity of Illness Description as the target variable.
+This repository contains code for a Treatment Prioritization model using a machine learning approach. The goal of the model is to prioritize treatments based on the severity of illness using the APR (All Patient Refined) Severity of Illness Code as the target variable.
 
 ## Dataset
-The model is trained on a dataset containing various features related to patient information, diagnoses, procedures, and other relevant information. The target variable is the APR Severity of Illness Description.
+The model is trained on a dataset containing various features related to patient information, diagnoses, procedures, and other relevant information. The target variable is the APR Severity of Illness Code.
 
 ## Preprocessing
 1. **Data Cleaning**: Handle missing values, outliers, and any data quality issues.
@@ -13,22 +13,21 @@ The model is trained on a dataset containing various features related to patient
 
 ## Model Training
 1. **Data Splitting**: Split the dataset into training and testing sets.
-2. **XGBoost Model**: Train an XGBoost model for multi-class classification.
-3. **Logistic Regression Model**: Train a logistic regression model for comparison.Though i tried both models neither of them worked as system crashed due to memory.
-4. **Batch Processing**: Implement batch processing to handle large datasets.
-5. **Scaling**: Scale features using Min-Max scaling.
-6. **Evaluation**: Evaluate the model performance using relevant metrics (e.g., accuracy).
+2. **XGBoost Model**: Attempted to train an XGBoost model for multi-class classification.
+3. **Logistic Regression Model**: Attempted to train a logistic regression model for comparison.
+4. **Decision Tree Model**: Attempted to implement a decision tree model for interpretability.
+5. **Batch Processing**: Implemented batch processing to handle large datasets.
+6. **Scaling**: Scaled features using Min-Max scaling.
+7. **Evaluation**: None of the mentioned models worked due to memory acquisition issues, leading to crashes with the large dataset.
 
 ## Files
 - `data_preprocessing.ipynb`: Jupyter notebook containing data cleaning and preprocessing steps.
-- `model_training.ipynb`: Jupyter notebook for training both XGBoost and Logistic Regression models.
+- `model_training.ipynb`: Jupyter notebook for attempting to train XGBoost, Logistic Regression, and Decision Tree models.
 - `requirements.txt`: List of Python dependencies.
 
 ## Usage
 1. Run `data_preprocessing.ipynb` to preprocess the dataset.
-2. Run `model_training.ipynb` to train both XGBoost and Logistic Regression models.
+2. The model training section in `model_training.ipynb` may require optimization for memory usage before execution.
 
-## Requirements
-Ensure you have the required Python packages by installing them using:
-```bash
-pip install -r requirements.txt
+## Challenges
+The mentioned models faced challenges with memory acquisition, leading to crashes, likely due to the size of the dataset and the complexity of the target variable.
